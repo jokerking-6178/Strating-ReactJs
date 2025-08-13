@@ -2,8 +2,12 @@
 
 function App() {
   return (
-    <h1>hello</h1>
+    <button id = "demo" >click me</button>
   );
 }
+
+const bt = document.querySelector('.demo').addEventListener('click',function(event){
+  console.log("fuck you");
+})
 
 export default App;
