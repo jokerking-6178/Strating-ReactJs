@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 function App() {
-  const [color, setColor] = useState("red")
+  const [color, setColor] = useState("white")
 
   return (
     <div className="w-full h-screen duration-200"
@@ -25,6 +25,26 @@ function App() {
           className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
           style={{backgroundColor: "blue"}}
           >Blue</button>
+          <button
+          onClick={() => setColor("black")}
+          className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+          style={{backgroundColor: "black"}}
+          >Black</button>
+          <button
+          onClick={() => setColor("purple")}
+          className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+          style={{backgroundColor: "purple"}}
+          >Purple</button>
+          <button
+          onClick={() => setColor("violet")}
+          className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+          style={{backgroundColor: "violet"}}
+          >Violet</button>
+          <button
+          onClick={() => setColor("gray")}
+          className="outline-none px-4 py-1 rounded-full text-white shadow-lg"
+          style={{backgroundColor: "gray"}}
+          >Gray</button>
         </div>
       </div>
     </div>
